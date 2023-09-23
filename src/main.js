@@ -1,8 +1,10 @@
 import Vue from "vue";
 import App from "./App.vue";
-
-Vue.config.productionTip = false;
+import { text, text2 } from "./utils.js";
+import alerts from "./constant";
 
 new Vue({
   render: (h) => h(App),
 }).$mount("#app");
+
+alerts(text, text2);
